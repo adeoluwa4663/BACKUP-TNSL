@@ -1,0 +1,82 @@
+@import '../Helpers/Helpers.scss';
+
+   
+.jobBanner{
+    font-family: $fontBold;
+    background-image: url('../assets/joboffer.png');
+    height: 45vh;
+    width: 100%;
+    
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // color: white;
+    // &:before {
+    //     content: '';
+    //         position: absolute;
+    //         top: 0;
+    //         right: 0;
+    //         bottom: 0;
+    //         left: 0;
+    //         background-image: linear-gradient(to bottom right,#080808,#000000);
+    //         opacity: .6; 
+    //         height: 40vh;
+            
+    //     }
+    //     color: red;
+    .jobOverlay{
+        height: 45vh;
+  width: 100%;
+  background-color: black;
+  /*opacity: .4; remove this*/
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+    }
+    }
+
+
+.jobList{
+    font-family: $fontNormal;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 10%;
+    .jobView{
+        display: flex;
+        margin-top: 2%;
+        border-bottom: 1px solid;
+        border-bottom-color: #D5D6D8;
+        padding-bottom: 2.5%;
+        padding-top: 4%;
+        .jobImage{
+            img{
+                width: 50%;
+            }
+        }
+        .jobContent{
+            h5{
+                color: $homeText;
+                font-family: $fontMedium;
+            }
+            h6{
+                
+               color: rgba(80, 122, 234, 0.75);
+            }
+            p{
+                font-family: $fontLight;
+                color: #D5D6D8;
+            }
+        }
+    }
+}

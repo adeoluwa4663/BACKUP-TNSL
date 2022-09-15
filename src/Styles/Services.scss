@@ -1,0 +1,97 @@
+@import '../Helpers/Helpers.scss';
+
+.serviceContainer {
+    font-family: $fontNormal;
+    text-align: center;
+    margin-top: 12%;
+    width: 100%;
+
+
+    h3 {
+        color: $homeText;
+        font-style: normal;
+        font-family: $fontBold;
+        font-size: 1em;
+        line-height: 37px;
+        /* identical to box height */
+        letter-spacing: 0.1em;
+    }
+
+    .services {
+        display: flex;
+        overflow: scroll;
+        margin-top: 5%;
+        margin-left: 2%;
+        -ms-overflow-style: none; 
+        scrollbar-width: none;
+        .service {
+            width: 400px;
+            padding-left: 0%;
+            width: 100%;
+
+            img {
+                width: 60%;
+                // width: 250px;
+                
+            }
+
+            .content {
+                text-align: center;
+                margin-top: 5%;
+                width: 100%;
+                
+
+                h3 {
+                    text-align: center;
+                    font-family: $fontMedium;
+                    font-size: 0.9em;
+                    line-height: 20px;
+                }
+
+                p {
+                    font-size: 0.9em;
+                    line-height: 20px;
+                    color: $description;
+
+                    padding-left: 20%;
+                    padding-right: 20%;
+
+                }
+            }
+
+
+        }
+
+    }
+
+}
+
+
+.toggleContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    .btnContainer{
+        display: flex;
+        .learning{
+            padding-right: 20%;
+        }
+        .learning::after{
+            display: flex;
+            margin-left: 8px;
+            content: '';
+            border: 2px solid $btnOrange;
+            width: 80%;
+        }
+        .business{
+            padding-left: 20%;
+        }
+        .business::after{
+            display: flex;
+            margin-left: 8px;
+            content: '';
+            border: 2px solid $btnOrange;
+            width: 80%;
+        }
+    }
+}

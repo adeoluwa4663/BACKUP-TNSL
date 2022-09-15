@@ -1,0 +1,68 @@
+
+
+// @function str-replace($string, $search, $replace: "") {
+//     $index: str-index($string, $search);
+//     @if $index {
+//         @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+//     }
+//     @return $string;
+// }
+
+// @mixin font-face($name, $path, $weight: null, $style: null, $exts: ttf) {
+//     $src: null;
+//     //  $extmods: (
+//     //          svg: "#" + str-replace($name, " ", "_")
+//     //  );
+//     $formats: (
+//             ttf: "truetype"
+//     );
+//     @each $ext in $exts {
+//         // $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+//         $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+//         // $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+//     }
+//     @font-face {
+//         font-family: quote($name);
+//         font-style: $style;
+//         font-weight: $weight;
+//         src: $src;
+//         font-display: swap;
+//     }
+// }
+
+// @include font-face("Araboto", "../Font/Araboto Black 400", 400, black,ttf);
+// @include font-face("Araboto", "../Font/Araboto Bold 400", 400, bold,ttf);
+// @include font-face("Araboto", "../Font/Araboto Light 400", 400, light,ttf);
+// @include font-face("Araboto", "../Font/Araboto Normal 400", 400, normal,ttf);
+// @include font-face("Araboto", "../Font/Araboto Thin 400", 400, thin,ttf);
+
+
+// @include font-face("Araboto Black", "../fonts/circular-std/circular-std-bold", 700, bold, ttf);
+// @include font-face("Araboto Black", "../fonts/circular-std/circular-std-bold", 700, normal,  ttf);
+
+@font-face {
+    font-family: ArabotoBlack;
+    src: url(../Font/ArabotoBlack400.ttf);
+}
+@font-face {
+    font-family: ArabotoBold;
+    src: url(../Font/ArabotoBold400.ttf);
+}
+@font-face {
+    font-family: ArabotoLight;
+    src: url(../Font/ArabotoLight400.ttf);
+}
+
+@font-face {
+    font-family: ArabotoMedium;
+    src: url(../Font/ArabotoMedium400.ttf);
+}
+@font-face {
+    font-family: ArabotoNormal;
+    src: url(../Font/ArabotoNormal400.ttf);
+}
+
+@font-face {
+    font-family: ArabotoThin;
+    src: url(../Font/ArabotoThin400.ttf);
+}

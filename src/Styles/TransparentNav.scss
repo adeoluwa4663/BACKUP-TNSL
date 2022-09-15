@@ -1,0 +1,101 @@
+@import "../Helpers/Helpers.scss";
+
+
+.transparentNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background: transparent;
+    font-family: $fontNormal;
+    padding-left: 5%;
+    color: $homeText;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+
+    .logo {
+        width: 30%;
+        
+
+        position: relative;
+        a {
+            text-decoration: none;
+            color: $homeText;
+            width: 65%;
+            display: flex;
+            justify-content: center;
+            margin-top: -10%;
+            margin-left: -20%;
+            position: absolute;
+            img{
+                width: 70%;
+            }
+        }
+
+    }
+
+    .links {
+        display: flex;
+        width: 40%;
+        font-size: 0.75em;
+        justify-content: space-between;    
+        align-items: center;
+        font-style: normal;
+        /* identical to box height */
+        letter-spacing: 0.07em;
+        
+        .home{
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: $fontBold;
+        }
+
+        a:hover{
+            color: $btnOrange;
+
+        }
+        .active a{
+            color: $btnOrange;
+        }
+        
+        
+        
+    }
+
+    .operations {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        position: relative;
+
+        .navIcon {
+            margin-left: 40%;
+            font-size: 0.9em;
+            color: white;
+        
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 0.75em;
+            line-height: 22px;
+            color: white;
+            margin-right: 10%;
+            font-family: $fontBold;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 650px) {
+.navbar{
+    display: none;
+}
+    
+}
+

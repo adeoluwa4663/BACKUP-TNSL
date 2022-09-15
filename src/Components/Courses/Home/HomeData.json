@@ -1,0 +1,46 @@
+{
+    "homedata":[{
+        "id": "1",
+        "image": "../../../assets/ui.png",
+        "title": "User Interface & Experience Design",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices gravida hendrerit auctor vel eget vitae a. Urna ts",
+        "rating": "4.5",
+        "people": "(14230)",
+        "level": "Advanced",
+        "date": "4th August 2022",
+        "length": "17hours 40minutes"
+    },
+    {
+        "id": "2",
+        "image": "../../../assets/ui.png",
+        "title": "Data Analytics",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices gravida hendrerit auctor vel eget vitae a. Urna ts",
+        "rating": "4.5",
+        "people": "(14230)",
+        "level": "Advanced",
+        "date": "4th August 2022",
+        "length": "17hours 40minutes"
+    },
+    {
+        "id": "3",
+        "image": "../../../assets/ui.png",
+        "title": "Programming",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices gravida hendrerit auctor vel eget vitae a. Urna ts",
+        "rating": "4.5",
+        "people": "(14230)",
+        "level": "Advanced",
+        "date": "4th August 2022",
+        "length": "17hours 40minutes"
+    },
+    {
+        "id": "4",
+        "image": "../../../assets/ui.png",
+        "title": "Graphics Design",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices gravida hendrerit auctor vel eget vitae a. Urna ts",
+        "rating": "4.5",
+        "people": "(14230)",
+        "level": "Advanced",
+        "date": "4th August 2022",
+        "length": "17hours 40minutes"
+    }]
+}

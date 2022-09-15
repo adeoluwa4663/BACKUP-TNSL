@@ -1,0 +1,230 @@
+@import '../Helpers/Helpers.scss';
+
+.outer-overview{
+    display: flex;
+    margin: 0 4em;
+    // justify-content: center;
+    // align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    font-family: $fontNormal;
+    .overview{
+        width: 60%;
+        h5{
+            width: 70%;
+            
+            font-family: $fontBold;
+            font-weight: 400;
+            font-size: 1.5em;
+            color: $homeText;
+            letter-spacing: 0.07em;
+            
+        }
+        p{
+            width: 70%;
+            font-family: $description;
+            padding-top: 2%;
+            font-size: 1em;
+            color: $description;
+        }
+    }
+}
+
+.sample{
+    
+    width: 100%;
+    font-family: $fontNormal;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    .heading{
+        font-family: $fontBold;
+        font-size: 1.5em;
+        color: $homeText;
+        margin-left: 2%;
+
+    }
+    .teacher{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .image{
+            margin-left: -5%;    
+            width: 70%;
+
+            
+            
+        
+        }
+        .details{
+            padding-bottom: 10%;
+            width: 30%;
+            margin-right: 5%;
+            h4{
+                font-family: $fontBold;
+                font-style: normal;
+                
+                font-size: 1.4em;
+                letter-spacing: 0.07em;
+                color: $homeText;
+            }
+            h6{
+                color: $description;
+
+            }
+            p{
+                font-family: $fontNormal;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                letter-spacing: 0.07em;
+                color: $description;
+            }
+        }
+    }
+}
+
+.body{
+    margin: 6em 4em;
+
+    color: $homeText;
+    .header{
+        text-align: center;
+        font-size: 2em;
+        font-family: $fontBold;
+        letter-spacing: 0.05em;
+        color: $btnOrange;
+        margin-bottom: 2%;
+    }
+    .subheader{
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.2em;
+        font-family: $fontNormal;
+        margin-bottom: 8%;
+        color: $description;
+    
+    }
+    .module{
+        .topic{
+            font-size: 1.35em;
+            font-family: $fontBold;
+            letter-spacing: 0.07em;
+            color: $homeText;
+        }
+        .content{
+            font-weight: 400;
+            font-size: 1.1em;
+            font-family: $fontNormal;
+            width: 100%;
+            color: $description;
+
+        }
+        .icon{
+            float: right;
+        }
+    }
+}
+
+.mentors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $homeText;
+    .header{
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.9em;
+        font-family: $fontBold;
+        letter-spacing: 0.07em;
+        
+    }
+    .subheader{
+        text-align: center;
+        width: 52%;
+        font-weight: 400;
+        font-size: 1.21em;
+        font-family: $fontNormal;
+        margin: 1.5em auto;
+        color: $description;
+        line-height: 35px;
+    }
+    .specific{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .eachmentor{
+            margin: 3em;
+            width: 100%;
+            .name{
+                text-align: center;
+                margin-top: 1.5em;
+                font-size: 1.2em;
+                font-family: $fontBold;
+            }
+            .info{
+                text-align: center;
+                margin-top: -5%;
+                color: $description;
+                
+            }
+            img{
+                margin-left: 12%;
+                width: 70%;
+            }
+        }
+    }
+}
+
+.payment{
+    margin: 6em 4em;
+    color: $homeText;
+    .header{
+        text-align: center;
+        font-size: 1.5em;
+        font-family: $fontBold;
+        line-height: 65px;
+        letter-spacing: 0.07em;
+    }
+    .subheader{
+        text-align: center;
+        width: 59%;
+        font-size: 1.2em;
+        font-family: $fontNormal;
+        margin: 1.5em auto;
+        color: $description;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h6{
+            color: $btnOrange;
+            margin-top: 2%;
+            font-family: $fontMedium;
+            font-size: 1.4em;
+        }
+        .contentFlex{
+            display: flex;
+        }
+        .box{
+            width: 350px;
+            height: 350px;
+            border: 1px solid $homeText;
+            margin: 3em 7em;
+        }
+    }
+    
+}
+
+.overviewImage{
+    img{
+        width: 75%;
+    }
+}

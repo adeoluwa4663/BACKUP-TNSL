@@ -1,0 +1,73 @@
+@import "../Helpers/Helpers.scss";
+
+.container{
+  box-sizing: border-box;
+  font-family: $fontMedium;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  padding: 8%;
+  color: $homeText;
+  h2{
+    font-family: $fontBold;
+    margin: 1em 0;
+  }
+  .code-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+  }
+  .code {
+    border-radius: 5px;
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid $verificationBorder;
+      outline-width: thin;;
+      outline-color: $verificationBorder;
+    margin:0 1em;
+    text-align: center;
+    font-weight: 300;
+    -moz-appearance: textfield;
+    margin-left: 10px;
+    &:valid {
+      border-color: $homeText;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+  }
+  button{
+    width: 25%;
+    margin: 0 auto;
+    padding: 0.75rem;
+    background: $btnOrange;
+    border: 1px solid $btnOrange;
+    border-radius: 8px;
+    color: #fff;
+    &:hover{
+      background: $btnOrangehover;
+      border: 1px solid $btnOrangehover;
+    }
+  }
+  small{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px;
+    line-height: 20px;
+    font-size: 16px;
+    max-width: 400px;
+    color: $description;
+  }
+}
+    
+@media(max-width: 600px) {
+  .code-container {
+    flex-wrap: wrap;
+  }
+  
+  .code {
+    font-size: 60px;
+    height: 80px;
+    max-width: 70px;
+  }
+}

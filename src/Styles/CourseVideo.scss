@@ -1,0 +1,114 @@
+@import "../Helpers/Helpers.scss";
+
+.parent{
+    display: flex;
+
+
+.currentVideo{
+    border-right: 1px solid $grayBorder;
+    width: 70%;
+    .placeholder{
+        display: flex;
+        padding: 10em 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../assets/courseBackground.png');
+        background-size:100%;
+    }
+    .courseButton{        
+        display: flex;
+        margin: 1em;
+        border-bottom: 1px solid $grayBorder;    
+        button{
+            border: none;
+            background: none;
+            color: #abacb1;
+            font-family: $fontBold;
+            padding-bottom: 1em;
+            font-size: 20px;
+            letter-spacing: 0.07em;
+            margin-right: 3%;
+            transition: right 250ms;                   
+        }
+        .active{
+            color: $homeText;
+        }
+    }
+    .info{
+        margin: 1em;
+        display: flex;
+        font-family: $fontNormal;
+        font-weight: 500;
+        font-size: 20px;
+        color: $description2;
+        .timestamp{
+            width: 5%;
+        }
+        .transcriptText{
+            width: 90%;
+        }
+    }
+}
+
+.courseContent{
+    margin: 0.5em;
+    width: 30%;
+    .collapsible{
+        margin: 1.5em 0;
+    }
+    .headerTopic{
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid $grayBorder;
+        font-family: $fontNormal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        color: $homeText;
+    }
+    h5{
+        font-family: $fontNormal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        color: $homeText;
+    }
+    p{
+        font-family: $fontNormal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.07em;
+        color: $formDescription;
+
+    }
+    .iconClose{
+        display: flex;
+        padding: 0.5em;
+        border: 1px solid $signupTheme;
+        color: #f4f8ff;
+        border-radius: 10px;
+        .toggleIcon{
+            width: 1em;
+            margin-left: auto;
+        }
+    }
+    .iconOpen{
+        display: flex;
+        padding: 0.5em;
+        border: 1px solid $grayBorder;
+        border-radius: 10px;
+        .toggleIcon{
+            width: 1em;
+            margin-left: auto;
+        }
+    }
+    .topic{
+        display: flex;
+        .topicList{
+            margin-left: 1em;
+        }
+    }
+}
+}

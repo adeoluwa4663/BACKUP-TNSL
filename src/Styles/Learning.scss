@@ -1,0 +1,690 @@
+@import '../Helpers/Helpers.scss';
+
+
+
+.learningMenu{
+    
+    font-family: $fontNormal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+
+
+
+    
+    .learningBtn{
+        
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+            button{
+                border: none;
+                background: none;
+                color: $btnOrange;
+                font-family: $fontBold;
+                font-size: 1em;
+                letter-spacing: 0.07em;
+                margin-left: 2.5%;
+                margin-right: 2.5%;
+                border-bottom: 3px solid $btnOrange;
+                transition: right 250ms;
+                
+        
+            
+            }
+            .btn-inactive{
+                color: $description;
+                border:none;
+            }
+        
+        
+        
+
+    }
+    .toggleContainer{
+    
+        display: block;
+        .jobContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .jobContents{
+                padding-left: 5%;
+                h6{
+                    color: $homeText;
+                    font-family: $fontBold;
+                    font-size: 1.2em;
+                }
+                p{
+                    color: $description;
+                    width: 50%;
+                    line-height: 27px;
+                    font-size: 1em;
+                }
+        
+            }
+            .jobImage{
+                img{
+                    width: 55%;
+                }
+            }
+        }
+        
+        .learningContent{
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+            h4{
+                font-size: 1.2em;
+                font-family: $fontBold;
+                color: $homeText;
+                letter-spacing: 0.07em;
+            }
+            p{
+                color: $description;
+                font-family: $fontNormal;
+                letter-spacing: 0.07em;
+                font-size: 0.9em;
+                width: 40%;
+                line-height: 25px;
+            }
+        }
+
+        .businessContent{
+
+            display: flex;
+            justify-content: center;
+            
+            align-items: center;
+            margin-top: 5%;
+            margin-bottom: -18%;
+        
+            .heading{
+                width: 50%;
+                h6{
+                    font-family: $fontBold;
+                    font-size: 1.1em;
+                    color: $homeText;
+                    width: 30%;
+                    letter-spacing: 0.07em;
+                    text-align: left;
+                    line-height: 25px;
+                    margin-left: -15%;
+                }
+            }
+            .content{
+                width: 27%;
+                font-size: 0.9em;
+                text-align: left;
+                color: $description;
+                margin-left: -20%;
+            }
+        }
+        .employContent{
+
+            display: flex;
+            justify-content: center;
+            
+            align-items: center;
+            margin-top: 7%;
+            margin-bottom: 3.5%;
+            .heading{
+                width: 50%;
+                h6{
+                    font-family: $fontBold;
+                    font-size: 1.1em;
+                    color: $homeText;
+                    width: 33%;
+                    letter-spacing: 0.07em;
+                    text-align: left;
+                    line-height: 25px;
+                    margin-left: -15%;
+                }
+            }
+            .content{
+                width: 27%;
+                font-size: 0.9em;
+                text-align: left;
+                color: $description;
+                margin-left: -20%;
+            }
+        }
+
+        
+        .toggle{
+        display: flex;
+        padding-left: 14%;
+        padding-right: 14%;
+        
+        .toggleView{
+            
+            transition: right 250ms;
+            .toggleImg{
+                
+                img{
+
+                    width: 90%;
+                }
+            }
+            .toggleContent{
+                display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+                margin-top: 8%;
+                h4{
+                    font-family: $fontBold;
+                    color: $homeText;
+                    font-size: 1.2em;
+                    letter-spacing: 0.07em;
+                }
+                p{
+                    color: $description;
+                    width: 70%;
+                    line-height: 27px;
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+    
+}
+.paymentContainer{
+    margin-top: 5%;
+    .paymentContent{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+        h6{
+            font-family: $fontBold;
+            font-size: 1.2em;
+            color: $homeText;
+            letter-spacing: 0.07em;
+        }
+        p{
+            font-size: 1em;
+            color: $description;
+            font-family: $fontNormal;
+            width: 40%;
+            letter-spacing: 0.07em;
+            line-height: 30px;
+
+        }
+    }
+        .paymentMethods{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 5%;
+            .method1{
+                padding-right: 0.5%;
+                 width: 35%;
+                 padding-left: 2.5%;
+                 padding-top: 3%;
+                 padding-bottom: 2%;
+                 border: 1px solid $description2; 
+                 margin-left: 10%; 
+                 text-align: left; 
+                 border-radius: 10px;
+                 h6{
+                    width: 90%;
+                    font-family: $fontBold;
+                    font-size: 1.2em;
+                    color: $homeText;
+                    letter-spacing: 0.07em;
+                 }
+                 p{
+                    padding-top: 2.5%;
+                    color: $description;
+                    font-size: 0.9em;
+                    font-family: $fontMedium;
+                    width: 80%;
+                 }
+            }
+            .method2{
+                width: 35%;
+                 padding-right: 0.5%;
+                 padding-left: 2.5%;
+                 padding-top: 3%;
+                 padding-bottom: 2%;
+                 border: 1px solid $description2;
+                 margin-right: 10%;
+                 text-align: left;
+                 border-radius: 10px; 
+
+                 h6{
+                    width: 90%;
+                    font-family: $fontBold;
+                    font-size: 1.2em;
+                    color: $homeText;
+                    letter-spacing: 0.07em;
+                 }
+                 p{
+                    padding-top: 2%;
+                    color: $description;
+                    font-size: 0.9em;
+                    font-family: $fontMedium;
+                    width: 80%;
+                 }
+            }
+        }
+}
+
+
+.experienceContainer{
+    display: flex;
+    background: $signupTheme;
+    padding: 7%;
+    margin-top: 5%;
+    .user{
+        padding-left: 5%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid $description2;
+        text-align: left;
+        .userImage{
+            
+            img{
+                width: 50%;
+            }
+        }
+        .content{
+            flex-direction: column;
+            padding-top: 5%;
+            margin-left: -8%;
+            h6{
+                font-family: $fontBold;
+                color: $homeText;
+                font-size: 0.95em;
+            
+
+            }
+            p{
+                color: $description2;
+                font-size: 0.87em;
+                font-family: $fontNormal;
+
+            }
+            
+            
+        }
+        
+    }
+    .words{
+        border-left: 1px solid $description2;
+        width: 50%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-family: $fontNormal;
+            color: $description2;
+            font-size: 0.9em;
+            width: 60%;
+            text-align: left;
+            padding-left: 1%;
+            padding-top: 5%;
+        }
+
+    }
+}
+
+.hireContainer{
+    margin-top: 5%;
+    .hireImage{
+        img{
+            width: 15%;
+        }
+    }
+    .hireContent{
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h6{
+            font-family: $fontBold;
+            color: $homeText;
+            letter-spacing: 0.07em;
+            font-size: 1.2em;
+
+
+        }
+        p{
+            font-family: $fontNormal;
+            color: $description;
+            font-size: 0.9em;
+            width: 35%;
+            margin-top: 0.4%;
+            margin-bottom: 2%;
+            letter-spacing: 0.07em;
+
+        }
+    }
+}
+
+
+
+}
+
+.jobContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+    .jobContents{
+        padding-left: 5%;
+        text-align: left;
+        h6{
+            color: $homeText;
+            font-family: $fontBold;
+            font-size: 1.2em;
+        }
+        p{
+            color: $description;
+            width: 50%;
+            line-height: 27px;
+            font-size: 1em;
+        }
+
+    }
+    .jobImage{
+        img{
+            width: 55%;
+        }
+    }
+}
+.communityContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25%;
+    padding-top: 5%;
+    .communityContent{
+        text-align: left;
+        padding-left: 5%;
+        h6{
+            font-family: $fontBold;
+            color: $homeText;
+            letter-spacing: 0.07em;
+            font-size: 1.2em;
+
+        }
+        p{
+            color: $description;
+            font-size: 1em;
+            width: 55%;
+            letter-spacing: 0.07em;
+            font-family: $fontNormal;
+            line-height: 25px;
+        }
+    }
+    .communityImage{
+        margin-right: 10%;
+        img{
+            width: 70%;
+        }
+    }
+}
+
+.applyContainer{
+    background: $signupTheme;
+    padding-bottom: 5%;
+    padding-top: 15%;
+    margin-top: -28%;
+    
+    .applyContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+        h6{
+            color: $homeText;
+            font-family: $fontBold;
+            font-size: 1.2em;
+            letter-spacing: 0.07em;
+            line-height: 30px;
+        }
+        p{
+            font-family: $fontMedium;
+            color: $description;
+            font-size: 1em;
+            width: 40%;
+            letter-spacing: 0.07em;
+            line-height: 30px;
+            
+        }
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    .toggle{
+        flex-direction: column;
+    }
+    .learningMenu{
+        
+        // .learningContent{
+            
+        // }
+        
+            .toggleContainer{
+                .learningContent{
+                    p{
+                        width: 90%;
+                    }
+                }
+                
+                .businessContent{
+                    flex-direction: column;
+                    .heading{
+                        text-align: center;
+                        width: 100%; 
+                        h6{
+                            text-align: center;
+                            width: 80%;
+                            margin-left: 10%;
+                        }
+                    }
+                    .content{
+                        width: 80%;
+    
+                        padding-left: 10%;
+
+                        p{
+                            text-align: left;
+                        }
+                    }
+                }
+
+
+
+                .applyContainer{
+                    .applyContent{
+                        p{
+                            width: 80%;
+                            text-align: left;
+                        }
+                    }
+                }
+
+                .paymentContainer{
+                    .paymentContent{
+                        p{
+                            width: 80%;
+                            text-align: left;
+                            
+                        }
+                    }
+                    .paymentMethods{
+                        flex-direction: column;
+                        .method1{
+                            width: 90%;
+                            margin-left: 0%;
+                        }
+                        .method2{
+                            width: 90%;
+                            margin-right: 0%;
+                            margin-top: 10%;
+                        }
+                    }
+                }
+                .experienceContainer{
+                    flex-direction: column;
+                    .user{
+                        border: none;
+                        width: 100%;
+
+                        .content{
+                            margin-left: -15%;
+                            
+                        }
+
+
+                    }
+                    .words{
+                        border: none;
+                        width: 100%;
+                        p{
+                            width: 98%;
+                        }
+
+                    }
+                }
+                .employContent{
+                    flex-direction: column;
+                    .heading{
+                        width: 90%;
+                        h6{
+                            margin-left: 10%;
+                            width: 90%;
+                        }
+                    }
+                    .content{
+                        margin-top: 5%;
+                        width: 80%;
+                        margin-left: 10%;
+                    }
+
+                }
+
+                .hireContainer{
+                    margin-bottom: 10%;
+                    .hireImage{
+                        img{
+                            width: 50%;
+                        }
+                    }
+                    .hireContent{
+                        margin-top: 10%;
+                        margin-bottom: 5%;
+                        p{
+                            width: 90%;
+                            text-align: left;
+                        }
+                    }
+                }
+
+                
+
+            }
+            .jobContainer{
+                flex-direction: column;
+
+                .jobContents{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 10%;
+                    p{
+                        width: 100%;
+                        text-align: left;
+                        font-size: 0.87em;
+
+                    }
+                }
+
+            }
+            
+            .communityContainer{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .communityContent{
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h6{
+                        width: 90%;
+                        text-align: center;
+                    }
+                    p{
+                        width: 90%;
+                    }
+                }
+                .communityImage{
+                    margin-left: 10%;
+                    img{
+                        width: 80%;
+                    }
+                }
+            }
+        
+
+    }
+    
+
+}
+
+.environment{
+    margin-top: 2.5%;
+    .envContent{
+        h6{
+            color: $homeText;
+            font-family: $fontBold;
+            font-size: 1.2em;
+        }
+
+    }
+    .envImages{
+        padding-top: 2.5%;
+        display: flex;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+        
+        overflow-x: scroll;
+        margin-right: 5%;
+        margin-left: 5%;
+        img{
+            width: 400px;
+            padding-right: 2.5%;
+            padding-left: 2.5%;
+        }
+
+
+    }
+    .envImages::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+}

@@ -1,0 +1,399 @@
+@import "../Helpers/Helpers.scss";
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainLogin {
+    display: flex;
+    justify-content: space-between;
+}
+
+.loginContainer {
+    font-family: $fontNormal;
+    background: $loginTheme;
+    width: 35%;
+    height: 100vh;
+    .loginHeader {
+        padding-left: 5%;
+        padding-top: 10%;
+
+        h3 {
+            width: 90%;
+            height: 29px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: $loginThemeHeader;
+        }
+
+        p {
+            width: 90%;
+            height: 48px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.04em;
+            color: $loginThemeHeader;
+        }
+    }
+}
+
+.formLine {
+    width: 65%;
+    padding-top: 2%;
+    display: flex;
+
+    .line {
+        width: 65%;
+        border-width: 1px;
+        border-color: rgba(53, 61, 102, 0.25);
+    }
+
+    .lineContent {
+        background: white;
+        margin-top: -1%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 1%;
+        /* identical to box height */
+        /* Secondary 3 */
+        color: rgba(53, 61, 102, 0.7);
+
+    }
+
+}
+
+
+.loginForm {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -1.5%;
+    padding-top: 4%;
+    
+
+    .loginTitle {
+        text-align: center;
+        width: 100%;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.3em;
+        line-height: 24px;
+        color: #363636;
+        padding-top: 5%;
+
+    }
+    .google {
+        width: 70%;
+        padding-top: 1%;
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            background: $btnBlue;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.9em;
+            line-height: 22px;
+            color: white;
+            width: 100%;
+            padding-top: 1.1%;
+            padding-bottom: 1.1%;
+    
+            img {
+               width: 8%;
+                padding-right: 20px;
+    
+            }
+        }
+        button:hover{
+            background-color: $btnBluehover;
+        }
+
+    
+    }
+
+
+    .formGroup {
+        padding-top: 3%;
+        width: 70%;
+        // margin-left: 28%;
+
+        input {
+            width: 100%;
+            height: 48px;
+            background: #F5F5F5;
+            border-radius: 5px;
+            border: none;
+            font-size: 1.1em;
+            padding-left: 2%;
+        } 
+        .email {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+        }
+
+        .password {
+            margin-top: 4%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding-bottom: 3%;
+
+        }
+
+        label {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.95em;
+            line-height: 22px;
+            padding-bottom: 1%;
+            padding-left: 1%;
+            /* identical to box height */
+            color: $labelColor;
+        }
+        .signupForm{
+            display: flex;
+            justify-content: center;
+            padding-top: 3%;
+            .signupName{
+                width: 70%;
+            }
+            .signupMail{
+                width: 70%;
+                padding-left: 5%;
+                select{
+                    width: 100%;
+                    height: 48px;
+                    border: none;
+                    background: #F5F5F5;
+                    font-weight: 500;
+                    padding-left: 2%;
+                    color: $labelColor;
+                }
+            }
+           
+            
+            
+        }
+       
+    }
+
+    .loginWith {
+        margin-top: -1%;
+        p {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1em;
+
+
+            /* identical to box height */
+
+            color: #363636;
+
+
+        }
+    }
+    .signupBtn{
+        width: 70%;
+
+        button {
+            width: 35%;
+            height: 45px;
+            border: $btnOrange;
+            background: $btnOrange;
+            border-radius: 8px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1em;
+            line-height: 24px;
+            letter-spacing: 0.07em;
+
+            color: #FFFFFF;
+        }
+        button:hover{
+            background: $btnOrangehover;
+        }
+
+    }
+    .signupDescription{
+        width: 69%;
+        padding-top: 2%;
+        p{
+            
+font-style: normal;
+font-weight: 500;
+font-size: 0.85em;
+line-height: 20px;
+
+color: #111516;
+        }
+        span{
+            color: $formDescription;
+        }
+    }
+
+    .signupAddons{
+        margin-left: 58%;
+        .forgot {
+            margin-top: 7%;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.8em;
+            line-height: 17px;
+
+            /* identical to box height */
+
+            /* Secondary 2 */
+            color: $formDescription;
+        }            
+    }
+
+    .formAddons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+
+        .remember {
+
+            
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.8em;
+            line-height: 20px;
+            color: $btnOrange;
+            display: flex;
+            width: 50%;
+            label{
+                padding-left: 2%;
+            }
+        }
+
+        .forgot {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.8em;
+            line-height: 17px;
+
+            /* identical to box height */
+
+            /* Secondary 2 */
+            color: $formDescription;
+        }
+    }
+
+    .loginBtn {
+        width: 70%;
+        padding-top: 4%;
+
+        button {
+            width: 35%;
+            height: 45px;
+            border: $btnOrange;
+            background: $btnOrange;
+            border-radius: 8px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1em;
+            line-height: 24px;
+            letter-spacing: 0.07em;
+
+            color: #FFFFFF;
+        }
+        button:hover{
+            background: $btnOrangehover;
+        }
+    }
+
+    .formFooter {
+        
+        margin-top: 2%;
+        width: 70%;
+        
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.95em;
+        margin-bottom: 2%;
+
+        /* identical to box height */
+
+        /* Secondary 2 */
+        color: $formDescription;
+        .loginLink{
+            text-decoration: none;
+            color: $btnOrange;
+        }
+
+
+    }
+
+}
+
+
+@media only screen and (max-width: 650px) {
+    .mainLogin{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .loginContainer{
+        width: 100%;
+        padding-bottom: 10%;
+    }
+    .loginForm{
+        width: 100%;
+    }
+    .signupContainer{
+        width: 100%;
+        padding-bottom: 10%;
+    }
+    .signupForm{
+        flex-direction: column;
+        .signupMail{
+            margin-left: 0%;
+        }
+    }
+  }
+
+
+  .signupContainer{
+    background: $signupTheme;
+    width: 35%;
+    .signupHeader{
+        padding-left: 5%;
+        padding-top: 10%;
+
+        h3 {
+            width: 90%;
+            height: 29px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: $btnOrange;
+        }
+
+        p {
+            width: 90%;
+            height: 48px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.04em;
+            color: black;
+        }
+    }
+
+  }

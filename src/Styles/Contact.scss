@@ -1,0 +1,273 @@
+@import "../Helpers/Helpers.scss";
+@import '../Helpers/Font.scss';
+.connect{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10%;
+    padding-left: 5%;
+    font-family: $fontNormal;
+    padding-bottom: 10%;
+    .content{
+        h3{
+            font-size: 1.1em;
+            color: $btnOrange;
+            letter-spacing: 0.1em;
+            font-family: $fontBold;
+        }
+        .text{
+            padding-top: 8%;
+            h5{
+                color: $homeText;
+                font-size: 0.98em;
+            font-family: $fontBold;
+            letter-spacing: 0.05em;
+            line-height: 36px;
+            }
+            p{
+                font-size: 0.98em;
+                letter-spacing: 0.1em;
+                font-family: $fontBold;
+                color: $description2;
+                line-height: 15px;
+            }
+        }
+        h4{
+            font-size: 1em;
+            color: $homeText;
+            font-family: $fontBold;
+            letter-spacing: 0.1em;
+            margin-top: 15%;
+        }
+        .social{
+            padding-top: 2%;
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.95em;
+            
+        .linkedin{
+            color: #0A66C2;
+        }    
+        }
+        .twitter{
+            color: 	#1DA1F2;
+        }
+        
+        .ig {
+            background-color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #d6249f;
+
+  
+            
+           
+        }
+        
+        
+    }
+    .connectImg{
+        img{
+            width: 60%;
+        }
+    }
+}
+.wrapper{
+    background: $signupTheme;
+    width: 100%;
+    margin-top: -0.1rem;
+    .cover{
+        padding-top: 10%;
+        font-family: $fontNormal;
+        padding-bottom: 5%;
+        
+        .content{
+            margin: 0 auto;
+            width: 90%;
+            text-align: center;
+            
+
+            h2{
+                color: $homeText;
+                letter-spacing: 0.05em;
+                font-size: 1.7em;
+                font-family: $fontBold;
+            }
+
+            p{
+                width: 40%;
+                margin: 0 auto;
+                letter-spacing: 0.07em;
+                color: $homeText;
+                padding-top: 3%;
+                font-size: 1.1em;
+                line-height: 30px;
+
+            }
+
+            button {
+                background-color: $btnOrange;
+                border: $btnOrange;
+                border-radius: 8px;
+                width: 15%;
+                height: 45px;
+                color: white;
+                font-size: 0.9em;
+                font-family: $fontBold;
+                letter-spacing: 0.07em;
+                margin-top: 5%;
+            }
+
+            button:hover {
+                background: $btnOrangehover;
+            }
+        }
+    }
+}
+
+.faqContainer{
+    font-family: $fontNormal;
+    display: flex;
+    width: 100%;
+    padding-left: 5%;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    .faqContent{
+        h5{
+            font-size: 0.9em;
+            color: $btnOrange;
+            font-weight: 600;
+        }
+        p{
+        
+            color: $homeText;
+            font-size: 1.4em;
+            width: 25%;
+            letter-spacing: 0.1em;
+            line-height: 35px;
+            font-size: 1.4em;
+        }
+    }
+    .faqDropdown{
+        width: 90%;
+        margin-top: -0.5%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20%;
+        select{
+            background: transparent;
+            color: $faqColor;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            padding-bottom: 0%;
+            margin-top: 3%;
+            font-size: 0.95em;
+            width: 80%;
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .connect{
+        flex-direction: column-reverse;
+        .connectImg{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-right: 5%;
+        }
+        .content{
+            margin-top: 10%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 10%;
+        }
+    }
+
+    .faqContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .faqContent{
+            margin-left: -5%;
+        }
+        .faqDropdown{
+            margin-left: -10%;
+        }
+    }   
+}
+
+.formContainer{
+    font-family: $fontNormal;
+    color: $homeText;
+    margin: 0 4rem;
+    h6{
+        color: $btnOrange;
+        font-family: $fontBold;
+    }
+    h2{
+      font-weight: 600;
+      line-height: 35px; 
+      font-family: $fontBold;
+    }
+    .form{
+        width: 100%;
+        margin: 0 auto;
+        .left{
+            width: 50%;
+            float: left;
+        }
+        .right{
+            width: 50%;
+            float: right;
+        }
+        p{
+            margin:20px 0;
+        }
+        input{
+            border:none;
+            border:1px solid $formBackground;
+            background: $formBackground;
+            height: 4em;
+            font-size :14px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius:10px;
+            border-radius:10px;
+            width: 70%;
+            padding: 5px;
+        }
+        textarea{
+            position: relative;
+            padding: 5px;
+            border:1px solid $formBackground;
+            background: $formBackground;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            width: 90%;
+            height: 450px;
+        }
+        button{
+            padding:10px 80px;
+            background:$btnOrange;
+            color:#ffff;
+            border: 1px solid $btnOrange;
+            margin: 1.5rem 0;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            font-family: $fontBold;
+            &:hover{
+                background:$btnOrangehover;
+                color:#ffff;
+                border: 1px solid $btnOrangehover; 
+            }
+        }
+    }
+}

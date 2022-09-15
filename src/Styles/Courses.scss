@@ -1,0 +1,177 @@
+@import '../Helpers/Helpers.scss';
+
+.courseMenu{    
+    font-family: $fontNormal;
+    display: flex;
+    flex-direction: column;
+    .header{
+        text-align: left;  
+        margin-top: 1em;
+        margin-bottom: 0.5em;      
+        margin-left: 3em;
+        padding: 2.5em 1em;
+        font-style: $fontBold;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 56px;
+        color: $homeText;
+        background-color: $signupTheme;
+    }   
+    .courseButton{        
+        display: flex;
+        margin-left: 8em;
+        border-bottom: 1px solid $grayBorder;    
+        button{
+            border: none;
+            background: none;
+            color: $btnOrange;
+            font-family: $fontBold;
+            padding-bottom: 1em;
+            font-size: 20px;
+            letter-spacing: 0.07em;
+            margin-left: 2%;
+            margin-right: 2%;
+            border-bottom: 3px solid $btnOrange;
+            transition: right 250ms;                   
+        }
+        .btn-inactive{
+            color: $homeText;
+            border:none;
+        }
+        .completed{
+            border: none;
+            background: none;
+            color: $homeText;
+            font-family: $fontBold;
+            font-size: 20px;
+            letter-spacing: 0.07em;
+            margin-left: 2%;
+            margin-right: 2%;
+            transition: right 250ms; 
+            text-decoration: none;
+        }
+    }
+}
+
+.courseList{
+    font-family: $fontNormal;
+    padding-left: 9em;
+    margin: 1em 1em 9em 0.5em;
+    text-align: left;
+    .courseContent{
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        margin-top: 2%;
+        border: 1px solid $grayBorder;
+        border-radius: 10px;
+        padding: 2em 0;
+        width: 100%;
+        .courseImage{
+            width: 15%;
+            margin: 0 1em 0 2em;
+            img{
+                width: 80%;
+            }
+        }
+        .courseDesc{
+            width: 80%;
+            height: auto;
+            border-right: 1px solid $grayBorder;
+            h3{
+                font-family: $fontNormal;
+                font-size: 30px;
+                font-weight: 500;
+                color: $homeText;
+                line-height: 44px;
+            }
+            p{
+                width: 70%;
+                font-family: $fontNormal;
+                font-size: 20px;
+                color: $description2;
+                line-height: 30px;
+                span{
+                    font-family: $fontBold;
+                    font-weight: 600;
+                }
+            }
+        }
+        .courseInfo{
+            width: 30%;
+            p{
+                margin-left: 4em;
+                font-family: $fontNormal;
+                font-size: 20px;
+                color: $description2;
+                line-height: 30px;
+            }
+        }
+    }
+}    
+
+.progressList{
+    font-family: $fontNormal;
+    padding-left: 9em;
+    margin: 1em 1em 9em 0.5em;
+    text-align: left;
+    .progressContent{
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        margin-top: 2%;
+        border: 1px solid $grayBorder;
+        border-radius: 10px;
+        padding: 2em 0;
+        width: 100%;
+        .progressImage{
+            width: 15%;
+            margin: 0 1em 0 2em;
+            img{
+                width: 80%;
+            }
+        }
+        .progressDesc{
+            width: 80%;
+            height: auto;
+            border-right: 1px solid $grayBorder;
+            h3{
+                font-family: $fontNormal;
+                font-size: 34px;
+                font-weight: 600;
+                color: $description;
+                line-height: 44px;
+            }
+            p{
+                width: 70%;
+                font-family: $fontNormal;
+                font-size: 20px;
+                color: $description2;
+                line-height: 30px;
+                .week{
+                    margin-right: 1em;
+                }
+                .unit{
+                    margin-left: 1em;
+                }
+            }
+        }
+        .progressInfo{
+            width: 30%;
+            p{
+                margin-left: 4em;
+                font-family: $fontNormal;
+                font-size: 20px;
+                color: $description2;
+                line-height: 30px;
+                .next{
+                    font-weight: 600;
+                    font-size: 30px;
+                    line-height: 37px;
+                    letter-spacing: 0.07em;
+                    color: $description;
+                }
+            }
+        }
+    }
+}  

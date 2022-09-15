@@ -1,0 +1,69 @@
+@import '../Helpers/Helpers.scss';
+
+
+.faqWrapper {
+
+    font-family: $fontBold;
+    background-image: url('../assets/joboffer.png');
+    height: 45vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+   
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // color: white;
+    // &:before {
+    //     content: '';
+    //         position: absolute;
+    //         top: 0;
+    //         right: 0;
+    //         bottom: 0;
+    //         left: 0;
+    //         background-image: linear-gradient(to bottom right,#080808,#000000);
+    //         opacity: .6; 
+    //         height: 40vh;
+
+    //     }
+    //     color: red;
+
+    .contentb {
+        height: 45vh;
+        width: 100%;
+        
+        background-image: url('../assets/joboffer.png');
+        /*opacity: .4; remove this*/
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+
+        color: white;
+    }
+
+
+.faq {
+    h1 {
+
+        font-size: 30px;
+        padding-top: 4rem;
+        padding-left: 45%;
+        padding-right: 50%;
+    }
+
+    .accordion {
+        padding-top: 1.5rem;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-bottom: 50px;
+
+    }
+}

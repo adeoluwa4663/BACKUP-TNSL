@@ -1,0 +1,191 @@
+@import "../Helpers/Helpers.scss";
+
+.bannerContainer {
+    display: flex;
+    justify-content: space-between;
+    background: $signupTheme;
+    height: 65vh;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $fontNormal;
+    color: $homeText;
+    overflow: hidden;
+
+    .content {
+        width: 50%;
+        padding-left: 5%;
+
+        h1 {
+            
+            font-size: 2.5em;
+            letter-spacing: 0.05em;
+            font-family: $fontBold;
+
+        }
+
+        p {
+            
+            letter-spacing: 0.07em;
+            font-size: 1rem;
+            line-height: 25px;
+            word-break: break-word;
+            width: 85%;
+            font-style: normal;
+        }
+
+        button {
+            background-color: $btnOrange;
+            border: $btnOrange;
+            border-radius: 8px;
+            width: 23%;
+            height: 45px;
+            color: white;
+            font-size: 0.9em;
+            letter-spacing: 0.07em;
+            margin-top: 5%;
+            font-family: $fontBold;
+        }
+
+        button:hover {
+            background: $btnOrangehover;
+        }
+    }
+
+    .imgs {
+        width: 50%;
+        margin-top: 5%;
+    }
+
+    .imageContainer {
+        position: relative;
+        display: flex;
+        margin-top: 0%;
+        width: 50%;
+
+
+
+        img {
+            padding: 2%;
+            width: 180px;
+            border-radius: 10px;
+            margin-top: 5%;
+
+
+        }
+
+        .male {
+            margin-top: 10%;
+            position: absolute;
+
+
+        }
+
+        .female {
+            margin-bottom: 10%;
+            position: absolute;
+            margin-left: -30%;
+
+        }
+
+        .imageBackround {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin-left: 25%;
+            margin-top: 15%;
+            border: 1px solid blue;
+
+            background: linear-gradient(180deg, rgba(0, 194, 255, 0.105) 0%, rgba(241, 11, 176, 0.75) 100%);
+            filter: blur(200px);
+
+            border-radius: 100%;
+
+            transform: rotate(28.38deg);
+
+        }
+
+        .imageBackground2 {
+            position: relative;
+            width: 120px;
+            margin-left: -192.5px;
+            height: 180px;
+            background: linear-gradient(180deg, rgba(24, 75, 255, 0) 0%, #174AFF 100%);
+            filter: blur(200px);
+            transform: rotate(28.38deg);
+        }
+
+
+    }
+
+    .imageContainer2 {
+        position: relative;
+
+        img {
+            margin-top: -55%;
+            width: 70%;
+            position: absolute;
+            margin-left: -12%;
+
+
+        }
+
+        .imageBackround {
+            position: relative;
+            width: 230px;
+            height: 230px;
+            margin-right: 250px;
+            background: linear-gradient(180deg, rgba(0, 194, 255, 0.105) 0%, rgba(255, 41, 195, 0.75) 100%);
+            filter: blur(200px);
+            transform: rotate(28.38deg);
+            border-radius: 100%;
+
+            transform: rotate(28.38deg);
+
+        }
+
+        .imageBackground2 {
+            position: relative;
+            width: 120px;
+            height: 180px;
+            margin-left: 6%;
+            margin-top: -30%;
+            background: linear-gradient(180deg, rgba(24, 75, 255, 0) 0%, #174AFF 100%);
+            filter: blur(200px);
+
+
+            transform: rotate(28.38deg);
+
+            // background: linear-gradient(180deg, rgba(0, 194, 255, 0.105) 0%, rgba(255, 41, 195, 0.75) 100%);
+            // filter: blur(200px);
+            // transform: rotate(28.38deg);
+        }
+    }
+
+    .imageGradient {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+
+    }
+
+
+}
+
+@media only screen and (max-width: 650px) {
+    .bannerContainer {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+
+        .content {
+            width: 90%;
+        }
+    }
+
+    .imageContainer2{
+        margin-left: 70%;
+        
+    }
+
+}

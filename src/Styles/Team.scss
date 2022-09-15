@@ -1,0 +1,70 @@
+@import '../Helpers/Helpers.scss';
+
+.teamContainer {
+    text-align: center;
+    margin-top: 8%;
+    font-family: $fontNormal;
+
+    .header {
+        h4 {
+            color: $btnOrange;
+            font-size: 0.9em;
+            letter-spacing: 0.1em;
+        }
+
+        h3 {
+            color: $homeText;
+            font-size: 1em;
+            letter-spacing: 0.1em;
+            font-family: $fontBold;
+            
+        }
+    }
+
+    .profiles {
+        overflow: scroll;
+        display: flex;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin-top: 5%;
+
+        .profile {
+            img {
+                width: 65%;
+            }
+
+            .description {
+                text-align: start;
+                background: $signupTheme;
+                margin-left: 17.5%;
+                width: 65%;
+                margin-top: -9%;
+                padding-left: 5%;
+                padding-top: 5%;
+                padding-bottom: 2%;
+            }
+
+            h5 {
+                font-family: $fontBold;
+                font-size: 0.9em;
+                letter-spacing: 0.1em;
+                color: $homeText;
+                padding-top: 10%;
+            }
+
+            p {
+                
+                font-size: 0.8em;
+                letter-spacing: 0.1em;
+                color: $description;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .profiles{
+        flex-direction: column;
+    }
+}

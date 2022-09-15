@@ -1,0 +1,91 @@
+@import "../Helpers/Helpers.scss";
+
+.bottomChat{
+    font-family: $fontNormal;
+    position: fixed;
+    right: 0px;
+    top: 90vh;
+    bottom: 10px;
+    z-index: 3;
+
+    
+    .bottomChatcontainer1{
+        border: 1px solid $grayBorder;
+        width: 350px;
+        height: 10vh;
+        border-bottom: none;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        background: white;
+
+        .chatContents{
+            display: flex;
+            justify-content: space-between;
+            .cont{
+                margin-left: 10%;
+                margin-top: 3%;
+                h6{
+                    color: $homeText;
+                    font-family: $fontBold;
+                    font-size: 1.3em;
+
+                }
+                p{
+                    color: $description2;
+                    font-size: 0.8em;
+                    margin-top: -7%;
+                    
+                }
+            }
+            button{
+                background: none;
+                border: none;
+                font-size: 1.8em;
+                margin-right: 10%;
+                padding-bottom: 3%;
+            }
+
+        }
+        
+    }
+    .bottomChatcontainer2{
+        border: 1px solid $grayBorder;
+        width: 350px;
+        height: 500px;
+        margin-top: -300px;
+        border-bottom: none;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        background: white;
+        .chatContents{
+            display: flex;
+            justify-content: space-between;
+            .cont{
+                margin-left: 10%;
+                margin-top: 3%;
+                h6{
+                    color: $homeText;
+                    font-family: $fontBold;
+                    font-size: 1.3em;
+
+                }
+                p{
+                    font-size: 0.8em;
+                    margin-top: -7%;
+                    color: $description2;
+                    
+                }
+            }
+            button{
+                background: none;
+                border: none;
+                font-size: 1.8em;
+                margin-right: 10%;
+                padding-bottom: 3%;
+            }
+        }
+    }
+    
+    
+
+}

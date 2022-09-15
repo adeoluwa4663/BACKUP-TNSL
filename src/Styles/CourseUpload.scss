@@ -1,0 +1,102 @@
+@import '../Helpers/Helpers.scss';
+
+.courseUploads{
+    width: 80%;
+    margin-left: 12%;
+    margin-top: 2.5%;
+    font-family: $fontNormal;
+    
+    .fileUpload{
+        h5{
+            color: $homeText;
+            font-family: $fontBold;
+        }
+        p{
+            color: $description;
+        }
+
+    }
+    .courseDetails{
+    
+        margin-top: 5%;
+        display: flex;
+        width: 100%;
+        
+        h6{
+            font-family: $fontBold;
+            color: $homeText;
+        }
+        input{
+            border: 1px solid #ABACB1;
+            border-radius: 8px;
+            height: 90%;
+            width: 500px;
+           
+            
+        }
+        .courseImage{
+            padding-left: 5%;
+        .imgUpload{
+            border: 1px solid #ABACB1;
+            border-radius: 8px;
+            height: 90%;
+            width: 500px;
+            border-style: dotted;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            button{
+                border: none;
+                background: none;
+                font-size: 0.85em;
+                color: $description;
+                img{
+                    margin-top: -5%;
+                    height: 15px;
+                    width: 15px;
+                }
+            }
+            
+        }
+    }
+    }
+}
+
+.clickContainer{
+    font-family: $fontNormal;
+    width:80%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12%;
+    
+    .clickContents{
+        width:100%;
+        background: $signupTheme;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        border: none;
+        .clicktoUpload{
+
+            .clickIcon{
+                  img{
+                    width: 3%;
+                  }  
+                }
+                  .clickDescription{
+                    padding-top: 1%;
+                    padding-bottom: 0.4%;
+                    letter-spacing: 0.05em;
+                    font-size: 0.95em;
+                    color: $homeText;
+                  }
+                  .formats{
+                    font-family: $fontMedium;
+                    color: $description2;
+                  }
+        }
+
+    }
+}

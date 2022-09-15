@@ -1,0 +1,87 @@
+@import "../Helpers/Helpers.scss";
+
+
+.userNav{
+    display: flex;
+    justify-content: center;
+    
+    font-family: $fontNormal;
+    height: 80px;
+    background: none;
+
+    
+    .userNavcontainer{
+        display: flex;
+    width: 90%;
+    justify-content: space-between;
+    padding-top: 0.5%;
+
+    .userNavlogo{
+        width: 20%;
+        margin-left: 3%;
+
+        img{
+        
+            width: 80%;
+
+        }
+
+    }
+    .search{
+        display: flex;
+        color: $description;
+        width: 30%;
+        padding-top: 2%;
+        input{
+            height: 40px;
+            width: 100%;
+            padding-left: 2%;
+            border-radius: 20px;
+            border: 1px solid $description;
+        }
+        .searchIcon{
+            position: absolute;
+            margin-left: 25.4%;
+            padding-top: 0.7%;
+            font-size: 0.8em;
+
+        }
+
+
+    }
+    .links{
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        padding-top: 2.5%;
+        a{
+            text-decoration: none;
+            color: $description;
+            
+        }
+
+    }
+    .user{
+        display: flex;
+        padding-top: 1%;
+        .notification{
+            border: none;
+            background: none;
+            img{
+                width: 70%;
+            }
+
+        }
+        .profile{
+            border: none;
+            background: none;
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+            }
+        }
+    }
+}
+
+}

@@ -1,0 +1,79 @@
+@import '../Helpers/Helpers.scss';
+
+.trustedContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: $fontNormal;
+    color: $homeText;
+    flex-direction: column;
+    padding-top: 8%;
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        h3{
+            font-size: 1.5em;
+            letter-spacing: 0.07em;
+            width: 50%;
+            font-family: $fontBold;
+            span{
+                color: $btnOrange;
+            }
+        }
+        p{
+            color: $description;
+            width: 75%;
+            padding-top: 3%;
+        }
+    }
+    .companies{
+        .row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                padding-left: 5%;
+                padding-right: 5%;
+                padding-top: 5%;
+                width: 24%;
+            }
+        }
+        .row1{
+            img{
+                width: 12.5%;
+                padding-top: 7%;
+            }
+        }
+
+    }
+    
+}
+.trustedSmall{
+    margin-top: 8%;
+    
+    .smallContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h4{
+            color: $homeText;
+            font-family: $fontBold;
+            font-size: 1.5em;
+        }
+    }
+    .trustedImages{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 8%;
+        padding-right: 8%;
+
+        img{
+            width: 60%;
+        }
+    }
+}

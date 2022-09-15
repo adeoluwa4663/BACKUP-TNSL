@@ -1,0 +1,333 @@
+@import "../Helpers/Helpers.scss";
+
+.userCategory{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $fontNormal;
+    margin-top: 5%;
+    .userProfiles{
+        
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        .userDetail{
+            display: flex;
+            align-items: center;
+            padding-left: 8.5%;
+            .userImg{
+                img{
+                    border-radius: 100%;
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .userContent{
+                padding-left: 5%;
+                margin-top: 5%;
+                color: $description;
+                p{
+                    margin-top: -2%;
+                    .title{
+                        color: $homeText;
+                    }
+                    .verified{
+                        background: $btnOrange;
+                        border-radius: 100%;
+                        margin-left: 10%;
+                        img{
+                            width: 17px;
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+
+        }
+        .referals{
+            margin-left: 20%;
+            .referalContainer{
+                padding-left: 5%;
+                padding-top: 10%;
+                padding-right: 5%;
+                width: 100%;
+                background: $signupTheme;
+                padding-bottom: 5%;
+                border-radius: 10px;
+                .referalHeading{
+                    padding-bottom: 5%;
+                    border-bottom: 2px solid $description2;
+                    h6{
+                        color: $homeText;
+                        font-size: 1.2em;
+                    }
+                }
+                    .referalDescription{
+                        p{
+                            margin-top: 5%;
+                            color: $description2;
+                            font-size: 1em;
+                            width: 75%;
+                        }
+                    }
+                        .referalLink{
+                            .referalLinkcontainer{   
+                                
+                                display: flex;
+                                align-items: center;
+                                color: $description2;
+                                .referalInput{
+                
+                                    width: 95%;
+                                height: 36px;
+                                padding-bottom: 0.5%;
+                                padding-top: 0.9%;
+                                    border: none;
+                                    font-size: 0.85em;
+                                    padding-left: 3%;
+                                    border-radius: 8px;
+                                    color: $description2;
+                                    
+                                }
+                                button{
+                                    margin-left: 2%;
+                                    border: none;
+                                    background: $btnOrange;
+                                    border-radius: 8px;
+                                }
+                            }
+
+
+                        }
+            }
+
+        }
+    }
+    .socialContainer{
+        width: 80%;
+        .socials{
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin-left: -2.5%;
+            
+            .socialLinkcontent{
+                margin: 0.5% 0% 1% 1%;
+                height: 10%;
+                width: 180px;
+                border: 1px solid $description2;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $description2;
+                padding-top: 0.7%;
+                padding-bottom: 0.7%;
+                margin-left: 5%;
+                font-size: 0.85em;
+                font-family: $fontLight;
+                .eachContent{
+                    display: flex;
+                    .contentImg{
+                        padding-right: 10%;
+                        img{
+                            width: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .messageButton{
+        width: 80%;
+        padding-left: 1%;
+        margin-top: 2%;
+        
+    }
+}
+
+
+.userOverview{
+    padding-left: 11%;
+    padding-top: 4%;
+    width: 90%;
+    padding-bottom: 5%;
+    font-family: $fontNormal;
+    h5{
+        font-family: $fontBold;
+        color: $homeText;
+        padding-bottom: 2%;
+        font-size: 1.3em;
+    }
+    .overViewcontent{
+        display: flex;
+        justify-content: space-between;
+        .overviewContainer{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 25%;
+            height: 135px;
+            border: 1px solid $description2;
+            border-radius: 10px;
+            padding-left: 1%;
+            padding-top: 2%;
+            .headerContent{
+            padding-left: 5%;
+            border-bottom: 1px solid $description2;
+            height: 35px;
+            width: 95%;
+            font-size: 1.2em;
+
+            }
+            .money{
+                p{
+                    padding-top: 8%;
+                    font-size: 1.8em;
+                    font-family: $fontMedium;
+                    color: $description;
+                    padding-left: 6%;
+                }
+
+            }
+        }
+    }
+
+}
+
+.projectsContainer{
+    font-family: $fontNormal;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 10%;
+    padding-bottom: 2.5%;
+    
+    .projectContainer{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        .projectHeader{
+            
+            
+            h5{
+                font-family: $fontBold;
+                color: $homeText;
+                font-size: 1.3em;
+
+
+            }
+        }
+        .projectContent{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            margin-top: 5%;
+            
+            .projectImage{
+                border: 1px solid $grayBorder;
+                width: 70px;
+                height: 70px;
+                
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img{
+                    width: 65px;
+                    height: 65px;
+                
+                }
+            }
+            .projectItems{
+                margin-left: 2%;
+                margin-top: 2.5%;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                h6{
+                    font-size: 1.2em;
+                    font-family: $fontBold;
+                    letter-spacing: 0.05em;
+                    color: $description;
+                }
+                p{
+                    font-size: 1em;
+                    color: $description2;
+                    letter-spacing: 0.05em;
+                }
+                img{
+                    width: 15%;
+                    margin-left: 5%;
+                    margin-top: -4%;
+                }
+            }
+        
+            
+        }
+    }
+    .trendingContainer{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        margin-top: -9%;
+        .trendingHeader{
+            h5{
+                font-family: $fontBold;
+                color: $homeText;
+                font-size: 1.3em;
+                padding-bottom: 5%;
+
+
+            }
+        }
+            .trendingContent{
+                display: flex;
+                margin-top: 5%;
+                
+                .trendingImg{
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 100%;
+                    border: 1px solid $grayBorder; 
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img{
+                        width: 65px;
+                        height: 65px;
+                        border-radius: 100%;
+                    
+                    }
+
+                }
+                .trendingDescription{
+                    margin-top: 3%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin-left: 4%;
+                    h6{
+                        letter-spacing: 0.07em;
+                        color: $description;
+                        font-family: $fontBold;
+                    }
+                    p{
+                        color: $description2;
+                        letter-spacing: 0.03em;
+                        margin-left: -10%;
+                    }
+
+                }
+            }
+        
+    }
+}
+

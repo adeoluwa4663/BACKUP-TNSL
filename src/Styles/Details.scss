@@ -1,0 +1,121 @@
+@import "../Helpers/Helpers.scss";
+
+.details {
+    font-family: $fontNormal;
+    padding-left: 5%;
+    padding-top: 3%;
+    background: white;
+    .detail {
+        display: flex;
+
+        .who {
+            width: 55%;
+
+            h3 {
+                color: $btnOrange;
+                font-family: $fontBold;
+                font-size: 0.9em;
+                line-height: 29px;
+                letter-spacing: 0.05em;
+            }
+
+            p {
+                color: $homeText;
+                font-weight: 400;
+                font-size: 1.2em;
+                line-height: 30px;
+                width: 70%;
+            }
+            
+        }
+
+    }
+
+    .detail1 {
+        display: flex;
+        margin-top: 12%;
+
+        .who {
+            width: 55%;
+
+            h3 {
+                color: $btnOrange;
+                font-family: $fontBold;
+                font-size: 0.9em;
+                line-height: 29px;
+                letter-spacing: 0.05em;
+            }
+
+            p {
+                color: $homeText;
+                font-weight: 500;
+                font-size: 1.2em;
+                line-height: 30px;
+                width: 80%;
+            }
+        }
+
+        .ourImg {
+            padding-left: 15%;
+
+            img {
+                width: 70%;
+            }
+        }
+
+    }
+
+    .description {
+        width: 45%;
+        padding-top: 5%;
+
+        p {
+            width: 75%;
+            color: $description;
+            font-weight: 400;
+            font-size: 1em;
+            line-height: 25px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+   .details{
+
+       .detail{
+           flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        .who{
+            width: 95%;
+            h3{
+                width: 100%;
+            }
+            p{
+                width: 100%;
+            }
+        }
+        .description{
+            width: 95%;
+            p{
+                width: 100%;
+            }
+        }
+    }
+    .detail1{
+        flex-direction: column;
+        .who{
+            width: 95%;
+            h3{
+                width: 100%;
+
+            }
+            p{
+                width: 100%;
+            }
+        }
+    }
+        
+}
+    }

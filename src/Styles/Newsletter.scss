@@ -1,0 +1,66 @@
+@import '../Helpers/Helpers.scss';
+
+.newsletterContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: $signupTheme;
+    font-family: $fontNormal;
+    margin-bottom: 10%;
+    padding-top: 5%;
+    margin-top: 10%;
+    .description{
+        width: 30%;
+        h3{
+            color: $homeText;
+            font-family: $fontBold;
+font-size: 1.3em;
+letter-spacing: 0.06em;
+
+        }
+    }
+    .subscribe{
+        display: flex;
+        width: 30%;
+        padding-bottom: 5%;
+        padding-top: 4%;
+        input{
+            border: none;
+            height: 50px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            
+        }
+        button{
+            height: 50px;
+            border: none;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background: $btnOrange;
+            width: 40%;
+            color: white;
+            font-size: 0.8em;
+            letter-spacing: 0.05em;
+            
+        }
+        button:hover{
+            background: $btnOrangehover;
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    
+   .newsletterContainer{
+    width: 100%;
+    .description{
+        width: 95%;
+        .subscribe{
+            width: 100%;
+        }
+    }
+   }
+}

@@ -1,0 +1,31 @@
+@import "../Helpers/Helpers.scss";
+.orangeButton{
+    background: $btnOrange;
+    border: none;
+    color: white;
+    font-family: $fontBold;
+    width: 10%;
+    padding: 0.5%;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+.orangeButton:hover{
+    background: $btnOrangehover;
+}
+
+
+.graphiContainer{
+    width: 100%;
+    background: #5566A3;
+    height: 25vh;
+}
+
+@media only screen and (max-width: 650px) {
+    .orangeButton{
+        width: 40%;
+        padding: 2%;
+        font-size: 0.85em;
+    }
+    
+
+}
